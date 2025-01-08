@@ -1,0 +1,15 @@
+Group Selection:
+Qatar is the home nation and is given the first position in Group A. All other teams ordered by current strength and after Qatar split into selection Pots of 8 teams strongest to weakest. Each Pot was shuffled and one team from each Pot was drawn into each group.
+Match: A match is a record of a game between two teams, which has happened or will happen in the future.  
+    playMatch runs a number of playSessions, at the end of playMatch the final score is known, also manager belief and respect ratings are updated.  
+    During each playSession both teams have a number of opportunities to score, players who are in the team for the playSession lose energy after each playSession. The more playSessions a game has the more energy each player will use up.  Energy is recovered slowly between matches. The chance of a team scoring in a playSession is based on the teams current strength compared to a randomly generated number with an upper bound.  Cards can be awarded during a playing session.
+    A full 90 minute game is 4 playSessions.
+    Extra time is 2 play sessions.
+    First round of penalties is 5 playSessions.
+    The final round of penalties is one playSession repeated, until one team is ahead.
+Group Stage.  
+The group stage only uses a full 90 minute playSession.  3 points for a win, 1 for a draw and 0 for a loss.  Goals scored and goal difference are also recorded as part of the match.  When all the group stage games are complete, the group results are calculated, and ordered.  The top two teams in each group go through to the knockout stages.  These teams are marked in green.  An array groupStage is used to hold the matches scheduled and played.
+Knockout stage.  
+Knockout games have full 90 mins, and if needed, extra time, penalties part 1, and sudden death penalties after that.  The first round of the knockout stages has the strongest team in Group A play the second strongest player in Group B, and this pattern is used to schedule all the round 1 games.  After that the winner of each game will play the winner of the next group branch. until there is a winner.  After the semi-finals the 3rd round playoffs happen, which is a match between the losing teams from the semi-final.  This game happens before the final game.  An ArrayList called knockoutStage is uses to schedule and record the outcome of these matches.  When two matches have been completed a new match is added to the knockoutStage ArrayList and this is looped through until all matches have been played.
+Two yellow cards from a player results in a Red Card and Yellow cards being reset.  A red card means that the player doesn't play in a match, until the card is removed.  All yellow and red cards are removed after the quarter finals.
+Changes of energy for individual players, and respect and belief for the manager, if the player has a red card (all of which alter team strength) mean that different players are selected for teams to play matches.  If teams have multiple matches where they go to penalties they will have more players with less energy.  Manager belief and respect is impacted by winning and losing during the tournament.

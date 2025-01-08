@@ -1,0 +1,63 @@
+This last part of the assignment is designed to be challenging and should only be attempted 
+when you have completed the other parts. Don’t worry if you aren’t sure what to do or how 
+to start. You can still get a very good mark on the assignment without completing it. 
+In this final part you are to design and run a tournament using the classes and methods you have 
+created above. The tournament must follow the same pattern as a world cup. A group stage with 
+8 groups of 4 teams, where the top two teams go through. Followed by knockout stages to find a  
+final winner.  
+You could go about this task in many ways with varying degrees of complexity. The most simple 
+version might determine a winner of a match randomly. More involved versions will use the player 
+data of each team to determine a winner of a match. You can appropriate that data how you want. 
+For example you might determine that unfit players are more likely to get injuries during the 
+tournament or aggressive players are more likely to get booked. Also, consider whether you wish 
+to just predict a winner or score lines and more detailed match statistics.
+When you have completed your implementation complete a short description of how it works in 
+the text file TournamentDescription.txt in the template. The static method runTournament() should 
+start it running. 
+Finally, make sure your implementation outputs effective information to the terminal describing 
+match results and data
+
+class match (Team team1, Team team2, matchType)
+    Team team1
+    Team team2
+    matchOutcome
+    matchGoalDifference
+    matchGoalsScored
+
+
+
+Group Stage
+8 groups of 4 teams.
+    all teams play each other in a group. 
+    so each team plays 3 matches.
+    the points for a world cup are  
+    https://www.espn.co.uk/football/story/_/id/37634215/world-cup-22-tiebreakers-group-stage-points-level-explained
+    matchType - group or knockout
+    matchGroup - 
+    matchOutcome - It's three points for a win, one point for a draw and zero for a defeat.
+    matchGoalDifference - goals scored - goals conceded
+    matchGoalsScored - the total number of goals scored
+
+    matchPlayerStats
+    - goalsScored
+    - yellowCardsTotal
+    - redCardsTotal
+    - currentRedCards
+    - currentYellowCards
+    - fitnessChange
+
+    Needed for tie break of 3 or 4 teams - these are against players
+    - Yellow card: minus 1 point
+    - Indirect red card: minus 3 points
+    - Direct red card: minus 4 points
+    - Yellow card and direct red card: minus 5 points
+
+
+    Group A: South Korea, Saudi Arabia, France, Croatia.
+Group B: Canada, Qatar, Argentina, Senegal.
+Group C: Ecuador, Poland, Spain, Netherlands.
+Group D: Germany, Australia, Ghana, Uruguay.
+Group E: Switzerland, Denmark, Wales, Morocco.
+Group F: Tunisia, Iran, Cameroon, Serbia.
+Group G: Belgium, Japan, Costa Rica, USA.
+Group H: England, Mexico, Portugal, Brazil.
