@@ -2,7 +2,7 @@
 # World Cup Simulator 
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-**Timeline:** 2022  
+**Timeline:** 2023  
 **Team/Solo:** Solo  
 
 **Repository:** [https://github.com/jbrun001/worldcupsim](https://github.com/jbrun001/worldcupsim)
